@@ -1,0 +1,16 @@
+name = "my-react-worker"
+main = "worker/index.js"
+compatibility_date = "2023-10-01"
+
+[build]
+command = "npm run build"
+
+[vars]
+# Add your environment variables here
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
+
+[site]
+bucket = "./dist"
